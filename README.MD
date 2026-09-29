@@ -1,3 +1,3 @@
 Esta tarea consta de una calculadora web
 
-![captura de pantalla](captura.png)
+![captura.png](captura.png)
