@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Moderna</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display-container">
+            <input type="text" id="display" disabled placeholder="0">
+        </div>
+        <div class="buttons">
+            <button onclick="clearDisplay()" class="btn-action">C</button>
+            <button onclick="deleteLast()" class="btn-action">DEL</button>
+            <button onclick="appendValue('/')" class="btn-operator">÷</button>
+            <button onclick="appendValue('*')" class="btn-operator">×</button>
+            
+            <button onclick="appendValue('7')">7</button>
+            <button onclick="appendValue('8')">8</button>
+            <button onclick="appendValue('9')">9</button>
+            <button onclick="appendValue('-')" class="btn-operator">−</button>
+            
+            <button onclick="appendValue('4')">4</button>
+            <button onclick="appendValue('5')">5</button>
+            <button onclick="appendValue('6')">6</button>
+            <button onclick="appendValue('+')" class="btn-operator">+</button>
+            
+            <button onclick="appendValue('1')">1</button>
+            <button onclick="appendValue('2')">2</button>
+            <button onclick="appendValue('3')">3</button>
+            <button onclick="calculateResult()" class="btn-equal">=</button>
+            
+            <button onclick="appendValue('0')" class="btn-zero">0</button>
+            <button onclick="appendValue('.')">.</button>
+            
+            <button onclick="fetchMathFact()" class="btn-api">Dato Curioso (Fetch API)</button>
+        </div>
+        <div id="api-result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
